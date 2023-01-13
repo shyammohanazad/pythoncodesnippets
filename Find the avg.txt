@@ -1,0 +1,21 @@
+program to find avg
+
+student_heights=input(Inpu the list of student heights with space between) .split()
+
+for n in range(len(student_heights)):
+   student_heights[n]=int(student_heights[n])
+
+# .split() method splits the string fom space i.e. wheever it finds a space in between it count it as single unit 
+#Write your code below this row 👇
+
+#Without using len() and sum() funtion
+s=0
+c=0
+for x in student_heights:
+    s+=x
+    c+=1
+
+print(round(s/c))
+
+#With len() and sum() function
+print(round(sum(student_heights)/len(student_heights) 

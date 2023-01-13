@@ -1,0 +1,23 @@
+#Remember to use the random module
+#Hint: Remember to import the random module here at the top of the file. 🎲
+	 
+#Write the rest of your code below this line 👇
+import random  # files useful for randomization are available here.
+input1=input("Hey ! you are the umpire of today's england vs australia\'s match, Just toise the coin and tell Which  team decided to Bat and Which team decided to Ball .\n\n\n please Type Toss to Toss the coin.\n\n\n")
+
+if input1.lower()=="toss":
+    coin=random.randint(0,1)
+    if coin==0:
+        print("\n\nAustralia has won the TOSS. \n\n\n Towards the Australian Captain RICKY PONTING: What do you want to choose BALL FIRST or BAT FIRST.  press Enter to Continue...\n\n\n\ aa aaa")
+    else:
+        print("\n\nENGLAND has won the TOSS. \n \n Towards the ENGLAND Captain ANDREW FLINTOFF: What do you want to choose BALL FIRST or BAT FIRST.\n\n\n\ aa aaa")
+    
+choice=input("press Enter to Continue...")
+if not choice=="y":
+    elect=random.randint(0,1)
+    if elect==0:
+        print(" WE CHOOSE TO BAT FIRST")
+    else:
+        print("WE\'ve DECIDED TO BALL FIRST")
+else:
+    print(" You\'ve passed wrong value, please rerun the program")

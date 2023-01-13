@@ -1,0 +1,25 @@
+program to find maximum without using min() and max() funtion of python
+
+student_score=input(Inpu the list of student heights with space between) .split()
+
+for n in range(len(student_score)):
+   student_score[n]=int(student_score[n])
+
+# .split() method splits the string fom space i.e. wheever it finds a space in between it count it as single unit 
+#Write your code below this row 👇
+
+for a in student_score:
+   for b in student_heights:
+      if a<b:
+         a=b
+
+print(f" The heighest score in the class is: {a}")
+
+# second way
+
+heighest_score=0
+for score in student_score:
+    if score>heighest_score:
+       heighest_score=score
+
+print(heighest_score)

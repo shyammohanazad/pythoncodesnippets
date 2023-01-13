@@ -1,0 +1,15 @@
+# Import the random module here
+
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+import random
+print(len(names))
+random_int=random.randint(0,len(names)-1)
+
+print("Today\'s treat is sponsored by " + names[random_int])
+# shyam, mohan, krishna, nikhil, 
+# we can also use random.choice() function of random to directly select a string from list of strings.
