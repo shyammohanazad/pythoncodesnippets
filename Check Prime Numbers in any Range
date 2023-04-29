@@ -1,0 +1,17 @@
+for i in range(100):
+    L.append(i)         # Create a list of numbers in any range, here i have taken it under 100
+print(L)
+
+def prime(n):            # Defining a function to check wether the obtained number at any point of time is prime or not.
+    if n<2:
+        return False
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+    
+for n in L:                       # Finding and printing all the prime numbers in range of 0 to 100
+    if prime(n):
+        print (n," is a prime Number")
+    else:
+        print(n," is not a prime number")
